@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+html(lang="pt-br")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Busca por CEP
+
+        //- link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+        link(rel="stylesheet", href="style.css")
+    body
+        h1 Busca de cidades por estados
+
+        form(class='container')
+
+            div(class='input-field col s12')
+                select.estado
+                    option(value="", disabled, selected) Selecione
+                    //- option(value="12") Acre
+                    //- option(value="27") Alagoas
+                    //- option(value="13") Amazonas
+                    //- option(value="4") Amapá
+                    //- option(value="5") Bahia
+                    //- option(value="6") Ceará
+                    //- option(value="7") Distrito Federal
+                    //- option(value="8") Espírito Santo
+                    //- option(value="9") Goiás
+                    //- option(value="10") Maranhão
+                    //- option(value="11") Minas Gerais
+                    //- option(value="12") Mato Grosso do Sul
+                    //- option(value="13") Mato Grosso
+                    //- option(value="14") Pará
+                    //- option(value="15") Paraíba
+                    //- option(value="16") Pernambuco
+                    //- option(value="17") Piauí
+                    //- option(value="18") Paraná
+                    //- option(value="19") Rio de Janeiro
+                    //- option(value="20") Rio Grande do Norte
+                    //- option(value="21") Rondônia
+                    //- option(value="22") Roraima
+                    //- option(value="23") Rio Grande do Sul
+                    //- option(value="24") Santa Catarina
+                    //- option(value="25") Sergipe
+                    //- option(value="26") São Paulo
+                    //- option(value="27") Tocantins
+                label(for='estado') Estado
+            
+            div(class='input-field col s12')
+                select.cidade
+                    option(value="", disabled, selected) Selecione
+                label(for='cidade') Cidade
+
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        //- script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js")
+        script(src="app.js")
